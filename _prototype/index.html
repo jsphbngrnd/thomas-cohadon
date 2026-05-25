@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Thomas Cohadon — Avocat en dommage corporel, Marseille</title>
+<meta name="description" content="Cabinet d'avocat en dommage corporel à Marseille. Accompagnement des victimes d'accidents, de la procédure à l'indemnisation." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          background: 'hsl(var(--background))',
+          foreground: 'hsl(var(--foreground))',
+          primary: 'hsl(var(--primary))',
+          muted: 'hsl(var(--muted))',
+          'muted-foreground': 'hsl(var(--muted-foreground))',
+          border: 'hsl(var(--border))',
+          rule: 'hsl(var(--rule))',
+        },
+        fontFamily: {
+          serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          sans: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-screen-label="01 Accueil">
+
+<!-- ─────────── NAV ─────────── -->
+<header class="nav">
+  <div class="container-x flex items-center justify-between">
+    <a href="index.html" class="nav__brand font-serif text-xl tracking-tight">
+      Thomas <span class="font-serif-italic">Cohadon</span>
+    </a>
+    <nav class="nav__links flex items-center gap-10">
+      <a href="cabinet.html"  class="nav__link">Le cabinet</a>
+      <a href="expertise.html" class="nav__link">Expertise</a>
+      <a href="contact.html"  class="nav__link">Contact</a>
+      <a href="contact.html"  class="btn btn-primary text-xs">Prendre rendez-vous <span class="arrow">→</span></a>
+    </nav>
+    <button class="menu-toggle btn btn-ghost text-xs" aria-expanded="false" aria-label="Menu">Menu</button>
+  </div>
+  <div class="nav__panel">
+    <a href="cabinet.html">Le cabinet</a>
+    <a href="expertise.html">Expertise</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<!-- ─────────── HERO ─────────── -->
+<section class="container-x pt-40 md:pt-48 pb-24">
+  <div class="grid grid-cols-12 gap-8 items-end">
+    <div class="col-span-12 lg:col-span-7">
+      <div class="t-eyebrow rise d-1">Cabinet d'avocat — Barreau de Marseille</div>
+      <h1 class="font-serif t-display mt-6 rise d-2" style="line-height:1.02;">
+        Au service<br/>
+        des <span class="font-serif-italic">victimes</span><br/>
+        de dommages<br/>corporels.
+      </h1>
+      <div class="mt-12 max-w-md t-lead text-[color:hsl(var(--ink-light))] rise d-3">
+        Le cabinet accompagne les personnes blessées
+        et leurs proches dans la reconnaissance
+        de leurs préjudices et l'obtention d'une indemnisation juste.
+      </div>
+      <div class="mt-10 flex flex-wrap items-center gap-4 rise d-4">
+        <a class="btn btn-primary" href="contact.html">Premier échange confidentiel <span class="arrow">→</span></a>
+        <a class="btn btn-link" href="expertise.html">Découvrir l'expertise</a>
+      </div>
+    </div>
+
+    <div class="col-span-12 lg:col-span-5 lg:pl-10">
+      <div class="img-frame placeholder aspect-[3/4] rise d-3" data-placeholder="Marseille — photo à fournir"></div>
+      <div class="mt-4 flex items-center justify-between text-xs text-[color:hsl(var(--muted-foreground))]">
+        <span class="vertical-text" style="writing-mode:horizontal-tb; transform:none;">— Marseille</span>
+        <span>Inscrit au Barreau · Toque 1834</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── PILLARS ─────────── -->
+<section class="container-x py-24 hairline-b">
+  <div class="grid grid-cols-12 gap-8">
+    <div class="col-span-12 md:col-span-4">
+      <div class="t-eyebrow">— Le cabinet</div>
+      <h2 class="font-serif t-h2 mt-6">
+        Une pratique<br/><span class="font-serif-italic">entièrement</span><br/>dédiée aux victimes.
+      </h2>
+    </div>
+    <div class="col-span-12 md:col-span-7 md:col-start-6 prose-editorial t-lead">
+      <p>
+        Le droit du dommage corporel se trouve à la croisée du droit civil,
+        du droit pénal et du droit médical. Il exige une connaissance fine
+        de la procédure, mais aussi une lecture précise du dossier médical
+        et de la nomenclature Dintilhac.
+      </p>
+      <p>
+        Le cabinet défend des particuliers, jamais des compagnies
+        d'assurance. Chaque dossier est mené personnellement, de la première
+        consultation jusqu'à la liquidation des préjudices.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── THREE PILLARS ─────────── -->
+<section class="container-x py-24">
+  <div class="grid grid-cols-12 gap-10">
+    <article class="col-span-12 md:col-span-4 card-quiet">
+      <div class="numeral">i.</div>
+      <h3 class="font-serif t-h3 mt-6">Écoute & analyse</h3>
+      <p class="mt-4 text-[color:hsl(var(--ink-light))]">
+        Un premier rendez-vous gratuit, sans engagement, pour comprendre
+        votre situation et évaluer la recevabilité de votre dossier.
+      </p>
+    </article>
+    <article class="col-span-12 md:col-span-4 card-quiet">
+      <div class="numeral">ii.</div>
+      <h3 class="font-serif t-h3 mt-6">Stratégie & procédure</h3>
+      <p class="mt-4 text-[color:hsl(var(--ink-light))]">
+        Constitution du dossier médical, expertise contradictoire,
+        négociation amiable ou contentieuse selon l'intérêt du client.
+      </p>
+    </article>
+    <article class="col-span-12 md:col-span-4 card-quiet">
+      <div class="numeral">iii.</div>
+      <h3 class="font-serif t-h3 mt-6">Indemnisation</h3>
+      <p class="mt-4 text-[color:hsl(var(--ink-light))]">
+        Évaluation rigoureuse de chaque poste de préjudice et obtention
+        d'une réparation à la hauteur de ce qui a été subi.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- ─────────── EDITORIAL IMAGE BLOCK ─────────── -->
+<section class="container-x py-12">
+  <div class="img-frame aspect-[21/9]" data-rise>
+    <img src="assets/palais-de-justice-marseille.png"
+         alt="Palais de Justice de Marseille — façade néoclassique" />
+  </div>
+  <div class="mt-3 text-xs text-[color:hsl(var(--muted-foreground))]">
+    Palais de Justice de Marseille
+  </div>
+</section>
+
+<!-- ─────────── EXPERTISE TEASER ─────────── -->
+<section class="container-x py-24 hairline-b">
+  <div class="grid grid-cols-12 gap-8">
+    <div class="col-span-12 md:col-span-4">
+      <div class="t-eyebrow">— Domaines d'intervention</div>
+    </div>
+    <div class="col-span-12 md:col-span-8">
+      <h2 class="font-serif t-h1">
+        Tous les <span class="font-serif-italic">préjudices</span><br/>
+        corporels, sans exception.
+      </h2>
+
+      <ul class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-12">
+        <li class="py-6 hairline-b flex items-baseline justify-between gap-6">
+          <span class="font-serif text-xl">Accidents de la circulation</span>
+          <span class="t-small text-[color:hsl(var(--muted-foreground))]">01</span>
+        </li>
+        <li class="py-6 hairline-b flex items-baseline justify-between gap-6">
+          <span class="font-serif text-xl">Accidents médicaux</span>
+          <span class="t-small text-[color:hsl(var(--muted-foreground))]">02</span>
+        </li>
+        <li class="py-6 hairline-b flex items-baseline justify-between gap-6">
+          <span class="font-serif text-xl">Accidents de la vie</span>
+          <span class="t-small text-[color:hsl(var(--muted-foreground))]">03</span>
+        </li>
+        <li class="py-6 hairline-b flex items-baseline justify-between gap-6">
+          <span class="font-serif text-xl">Accidents du travail</span>
+          <span class="t-small text-[color:hsl(var(--muted-foreground))]">04</span>
+        </li>
+        <li class="py-6 hairline-b flex items-baseline justify-between gap-6">
+          <span class="font-serif text-xl">Agressions & infractions</span>
+          <span class="t-small text-[color:hsl(var(--muted-foreground))]">05</span>
+        </li>
+        <li class="py-6 hairline-b flex items-baseline justify-between gap-6">
+          <span class="font-serif text-xl">Préjudices d'affection</span>
+          <span class="t-small text-[color:hsl(var(--muted-foreground))]">06</span>
+        </li>
+      </ul>
+
+      <div class="mt-10">
+        <a class="btn btn-link" href="expertise.html">Voir le détail des prestations →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── APPROACH / SPLIT ─────────── -->
+<section class="container-x py-32">
+  <div class="grid grid-cols-12 gap-10 items-center">
+    <div class="col-span-12 md:col-span-5">
+      <div class="img-frame placeholder aspect-[4/5]" data-placeholder="Marseille — photo à fournir" data-rise></div>
+    </div>
+    <div class="col-span-12 md:col-span-6 md:col-start-7">
+      <div class="t-eyebrow">— Approche</div>
+      <h2 class="font-serif t-h1 mt-6">
+        Un dossier,<br/>
+        <span class="font-serif-italic">un avocat,</span><br/>
+        un engagement.
+      </h2>
+      <div class="mt-10 prose-editorial t-body max-w-xl">
+        <p>
+          La pratique du dommage corporel ne se délègue pas. Chaque
+          dossier est suivi personnellement par Maître Cohadon, du
+          premier rendez-vous à la dernière audience.
+        </p>
+        <p>
+          Cette continuité est la condition d'une défense vraiment
+          ajustée à la réalité du blessé&nbsp;: à sa douleur, à ses pertes,
+          à la trajectoire de sa reconstruction.
+        </p>
+      </div>
+      <div class="mt-10">
+        <a class="btn btn-ghost" href="cabinet.html">Découvrir le parcours <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── PROCESS RIBBON ─────────── -->
+<section class="container-x py-20" style="background:hsl(var(--background));">
+  <div class="hairline pt-16">
+    <div class="t-eyebrow">— Comment se déroule un dossier</div>
+    <div class="grid grid-cols-12 gap-8 mt-10">
+      <div class="col-span-12 md:col-span-3">
+        <div class="numeral">01</div>
+        <h4 class="font-serif text-lg mt-3">Prise de contact</h4>
+        <p class="mt-3 text-sm text-[color:hsl(var(--ink-light))]">Échange initial téléphonique ou en personne, gratuit et confidentiel.</p>
+      </div>
+      <div class="col-span-12 md:col-span-3">
+        <div class="numeral">02</div>
+        <h4 class="font-serif text-lg mt-3">Étude du dossier</h4>
+        <p class="mt-3 text-sm text-[color:hsl(var(--ink-light))]">Analyse des pièces médicales, des rapports d'expertise et des décisions antérieures.</p>
+      </div>
+      <div class="col-span-12 md:col-span-3">
+        <div class="numeral">03</div>
+        <h4 class="font-serif text-lg mt-3">Expertise & négociation</h4>
+        <p class="mt-3 text-sm text-[color:hsl(var(--ink-light))]">Assistance lors des expertises médicales, échanges avec l'assureur ou le FGTI.</p>
+      </div>
+      <div class="col-span-12 md:col-span-3">
+        <div class="numeral">04</div>
+        <h4 class="font-serif text-lg mt-3">Indemnisation</h4>
+        <p class="mt-3 text-sm text-[color:hsl(var(--ink-light))]">Liquidation des préjudices selon la nomenclature Dintilhac, transaction ou jugement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── CLOSING / CTA ─────────── -->
+<section class="container-x py-32 hairline-b">
+  <div class="grid grid-cols-12 gap-8 items-end">
+    <div class="col-span-12 md:col-span-8">
+      <div class="t-eyebrow">— Prendre contact</div>
+      <h2 class="font-serif t-display mt-6" style="line-height:1.02;">
+        Parlons de votre <span class="font-serif-italic">situation.</span>
+      </h2>
+    </div>
+    <div class="col-span-12 md:col-span-4 prose-editorial t-body">
+      <p>
+        Un premier échange est offert et reste strictement confidentiel.
+        Il permet d'évaluer si le cabinet est le bon interlocuteur
+        pour vous accompagner.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-4">
+        <a class="btn btn-primary" href="contact.html">Prendre rendez-vous <span class="arrow">→</span></a>
+        <a class="btn btn-link" href="tel:+33491000000">04 91 00 00 00</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── FOOTER ─────────── -->
+<footer class="container-x py-16">
+  <div class="grid grid-cols-12 gap-8">
+    <div class="col-span-12 md:col-span-5">
+      <div class="font-serif text-2xl">Thomas <span class="font-serif-italic">Cohadon</span></div>
+      <div class="mt-3 text-sm text-[color:hsl(var(--ink-light))] max-w-xs">
+        Avocat au Barreau de Marseille — droit du dommage corporel.
+      </div>
+    </div>
+    <div class="col-span-6 md:col-span-3">
+      <div class="t-eyebrow">Cabinet</div>
+      <ul class="mt-5 space-y-2 text-sm">
+        <li>12 rue Grignan</li>
+        <li>13006 Marseille</li>
+        <li>France</li>
+      </ul>
+    </div>
+    <div class="col-span-6 md:col-span-2">
+      <div class="t-eyebrow">Contact</div>
+      <ul class="mt-5 space-y-2 text-sm">
+        <li><a href="tel:+33491000000" class="hover:underline">04 91 00 00 00</a></li>
+        <li><a href="mailto:contact@cohadon-avocat.fr" class="hover:underline">contact@cohadon-avocat.fr</a></li>
+      </ul>
+    </div>
+    <div class="col-span-12 md:col-span-2">
+      <div class="t-eyebrow">Pages</div>
+      <ul class="mt-5 space-y-2 text-sm">
+        <li><a href="cabinet.html" class="hover:underline">Le cabinet</a></li>
+        <li><a href="expertise.html" class="hover:underline">Expertise</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        <li><a href="mentions-legales.html" class="hover:underline">Mentions légales</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mt-16 pt-6 hairline flex flex-col md:flex-row md:justify-between gap-3 text-xs text-[color:hsl(var(--muted-foreground))]">
+    <span>© <span id="year">2025</span> Thomas Cohadon — Tous droits réservés</span>
+    <span>Site soumis aux règles déontologiques de la profession d'avocat</span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>

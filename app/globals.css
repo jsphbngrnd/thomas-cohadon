@@ -1,0 +1,466 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Color tokens */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-rule: var(--rule);
+  --color-ink-light: var(--ink-light);
+
+  /* Fonts */
+  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-sans: var(--font-inter-tight), "Inter Tight", "Helvetica Neue", sans-serif;
+
+  /* Radius */
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: hsl(45 27% 97%);
+  --foreground: hsl(213 27% 17%);
+  --card: hsl(45 27% 97%);
+  --card-foreground: hsl(213 27% 17%);
+  --popover: hsl(45 27% 97%);
+  --popover-foreground: hsl(213 27% 17%);
+  --primary: hsl(204 38% 29%);
+  --primary-foreground: hsl(45 27% 97%);
+  --secondary: hsl(40 14% 82%);
+  --secondary-foreground: hsl(213 27% 17%);
+  --muted: hsl(40 14% 92%);
+  --muted-foreground: hsl(213 12% 38%);
+  --accent: hsl(204 38% 29%);
+  --accent-foreground: hsl(45 27% 97%);
+  --border: hsl(213 12% 88%);
+  --input: hsl(213 12% 88%);
+  --ring: hsl(204 38% 29%);
+  --rule: hsl(213 12% 82%);
+  --ink-light: hsl(213 12% 28%);
+  --radius: 0.25rem;
+}
+
+/* ─────────── Base ─────────── */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern", "liga";
+  letter-spacing: -0.005em;
+  line-height: 1.5;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* ─────────── Typography ─────────── */
+.font-serif {
+  font-family: var(--font-serif);
+  font-feature-settings: "kern", "liga", "dlig";
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  font-weight: 500;
+}
+
+.font-serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.t-display {
+  font-size: clamp(3rem, 7vw, 7.5rem);
+}
+.t-h1 {
+  font-size: clamp(2.25rem, 4.5vw, 4.25rem);
+}
+.t-h2 {
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+}
+.t-h3 {
+  font-size: clamp(1.25rem, 1.8vw, 1.65rem);
+}
+.t-lead {
+  font-size: clamp(1.125rem, 1.4vw, 1.375rem);
+  line-height: 1.55;
+}
+.t-body {
+  font-size: 1rem;
+}
+.t-small {
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+}
+.t-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--muted-foreground);
+}
+
+.prose-editorial p {
+  margin-bottom: 1.1em;
+  color: var(--ink-light);
+}
+.prose-editorial p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─────────── Layout ─────────── */
+.container-x {
+  padding-left: clamp(1.25rem, 4vw, 4rem);
+  padding-right: clamp(1.25rem, 4vw, 4rem);
+}
+
+/* ─────────── Hairlines ─────────── */
+.hairline {
+  border-top: 1px solid var(--rule);
+}
+.hairline-b {
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ─────────── Cards ─────────── */
+.card-quiet {
+  padding: 2rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+/* ─────────── Numerals ─────────── */
+.numeral {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 4vw, 3.75rem);
+  color: var(--primary);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+/* ─────────── Image frames ─────────── */
+.img-frame {
+  background: linear-gradient(
+    180deg,
+    hsl(40 18% 88%) 0%,
+    hsl(40 14% 78%) 100%
+  );
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.img-frame.placeholder {
+  background: repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent calc(8% - 1px),
+      hsla(40 10% 50% / 0.18) calc(8% - 1px),
+      hsla(40 10% 50% / 0.18) 8%
+    ),
+    linear-gradient(165deg, hsl(40 20% 90%) 0%, hsl(40 14% 70%) 100%);
+}
+.img-frame.placeholder::before {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 40%;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    hsla(40 14% 55% / 0.25) 100%
+  );
+  pointer-events: none;
+}
+.img-frame.placeholder::after {
+  content: attr(data-placeholder);
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: hsl(213 27% 17% / 0.65);
+  background: hsla(45 27% 97% / 0.88);
+  padding: 0.35rem 0.7rem;
+  border-radius: 1px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+/* ─────────── Map ─────────── */
+.map-frame {
+  position: relative;
+  background: linear-gradient(
+      180deg,
+      rgba(250, 250, 247, 0.6) 0%,
+      rgba(250, 250, 247, 0) 30%,
+      rgba(250, 250, 247, 0) 70%,
+      rgba(250, 250, 247, 0.6) 100%
+    ),
+    radial-gradient(
+      circle at 30% 40%,
+      hsl(40 18% 86%) 0%,
+      hsl(40 14% 78%) 60%
+    );
+  overflow: hidden;
+  border-radius: 2px;
+}
+.map-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+      90deg,
+      hsl(40 12% 70% / 0.4) 1px,
+      transparent 1px
+    ),
+    linear-gradient(0deg, hsl(40 12% 70% / 0.4) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(40 12% 65% / 0.6) 1px, transparent 1px),
+    linear-gradient(0deg, hsl(40 12% 65% / 0.6) 1px, transparent 1px);
+  background-size: 24px 24px, 24px 24px, 120px 120px, 120px 120px;
+  opacity: 0.6;
+}
+
+.map-pin {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--foreground);
+  box-shadow:
+    0 0 0 4px hsla(45 27% 97% / 0.8),
+    0 0 0 5px var(--foreground);
+}
+.map-pin::after {
+  content: "";
+  position: absolute;
+  inset: -16px;
+  border: 1px solid var(--foreground);
+  border-radius: 50%;
+  animation: pulse 2.4s ease-out infinite;
+}
+
+/* ─────────── Animations ─────────── */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.rise {
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.d-1 {
+  animation-delay: 0.1s;
+}
+.d-2 {
+  animation-delay: 0.22s;
+}
+.d-3 {
+  animation-delay: 0.35s;
+}
+.d-4 {
+  animation-delay: 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* ─────────── Nav ─────────── */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: background-color 0.35s ease, backdrop-filter 0.35s ease,
+    border-color 0.35s ease, padding 0.35s ease;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid transparent;
+}
+.nav.is-scrolled {
+  background-color: hsla(45 27% 97% / 0.82);
+  backdrop-filter: saturate(140%) blur(12px);
+  -webkit-backdrop-filter: saturate(140%) blur(12px);
+  border-bottom-color: var(--rule);
+  padding: 1rem 0;
+}
+.nav__brand {
+  letter-spacing: -0.01em;
+}
+.nav a.nav__link {
+  position: relative;
+  color: var(--foreground);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-family: var(--font-sans);
+}
+.nav a.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.nav a.nav__link:hover::after,
+.nav a.nav__link.is-active::after {
+  transform: scaleX(1);
+}
+.nav__panel {
+  display: none;
+}
+
+/* ─────────── Buttons (editorial variants) ─────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.875rem 1.5rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.25s ease, background-color 0.25s ease,
+    color 0.25s ease, border-color 0.25s ease;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: var(--font-sans);
+}
+.btn-primary {
+  background: var(--foreground);
+  color: var(--background);
+}
+.btn-primary:hover {
+  background: var(--primary);
+}
+.btn-ghost {
+  color: var(--foreground);
+  border-color: var(--rule);
+  background: transparent;
+}
+.btn-ghost:hover {
+  border-color: var(--foreground);
+}
+.btn-link {
+  padding: 0;
+  background: transparent;
+  color: var(--foreground);
+  border-bottom: 1px solid var(--foreground);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding-bottom: 4px;
+}
+.btn-link:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.btn .arrow {
+  font-family: var(--font-sans);
+  transition: transform 0.25s ease;
+}
+.btn:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* ─────────── Inputs ─────────── */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.field label {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.field input,
+.field textarea,
+.field select {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  padding: 0.75rem 0;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--foreground);
+  transition: border-color 0.25s ease;
+  outline: none;
+  width: 100%;
+}
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  border-bottom-color: var(--foreground);
+}
+.field textarea {
+  resize: vertical;
+  min-height: 7rem;
+}
+
+/* ─────────── Mobile / tablet nav panel ─────────── */
+.nav.is-open .nav__panel {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  background: var(--background);
+  flex-direction: column;
+  padding: 6rem 2rem 2rem;
+  gap: 1.5rem;
+  z-index: 40;
+}
