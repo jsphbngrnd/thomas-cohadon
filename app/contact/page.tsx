@@ -30,9 +30,7 @@ export default function ContactPage() {
             className="col-span-12 lg:col-span-3 t-lead"
             style={{ color: "var(--ink-light)" }}
           >
-            Premier échange offert,
-            <br />
-            réponse sous 48 h ouvrées.
+            Premier échange offert, réponse sous 48 h ouvrées.
           </div>
         </div>
       </section>

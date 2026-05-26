@@ -225,7 +225,6 @@ export default function ExpertisePage() {
             <div className="t-eyebrow">— Honoraires</div>
             <h2 className="font-serif t-h1 mt-6">
               Des honoraires <span className="font-serif-italic">clairs,</span>
-              <br />
               justes et transparents.
             </h2>
           </div>
@@ -336,12 +335,9 @@ export default function ExpertisePage() {
           <div className="col-span-12 md:col-span-4">
             <div className="t-eyebrow">— Questions fréquentes</div>
             <h2 className="font-serif t-h1 mt-6">
-              Ce que les
-              <br />
-              victimes{" "}
+              Ce que les victimes{" "}
               <span className="font-serif-italic">demandent</span>
-              <br />
-              le plus souvent.
+              {" "}le plus souvent.
             </h2>
           </div>
           <div className="col-span-12 md:col-span-7 md:col-start-6">
