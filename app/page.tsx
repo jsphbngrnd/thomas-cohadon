@@ -13,8 +13,8 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="container-x pt-40 md:pt-48 pb-24">
-        <div className="grid grid-cols-12 gap-8 items-end">
+      <section className="container-x pt-32 md:pt-40 lg:pt-48 pb-12 md:pb-16 lg:pb-24">
+        <div className="grid grid-cols-12 gap-6 lg:gap-8 items-end">
           <div className="col-span-12 lg:col-span-7">
             <div className="t-eyebrow rise d-1">
               Cabinet d'avocat — Barreau de Marseille
@@ -32,7 +32,7 @@ export default function HomePage() {
               corporels.
             </h1>
             <div
-              className="mt-12 max-w-md t-lead rise d-3"
+              className="mt-8 md:mt-12 max-w-md t-lead rise d-3"
               style={{ color: "var(--ink-light)" }}
             >
               Le cabinet accompagne les personnes blessées et leurs proches dans
@@ -66,8 +66,8 @@ export default function HomePage() {
       </section>
 
       {/* INTRO TEXT */}
-      <section className="container-x py-24 hairline-b">
-        <div className="grid grid-cols-12 gap-8">
+      <section className="container-x py-12 md:py-16 lg:py-24 hairline-b">
+        <div className="grid grid-cols-12 gap-6 md:gap-8">
           <div className="col-span-12 md:col-span-4">
             <div className="t-eyebrow">— Le cabinet</div>
             <h2 className="font-serif t-h2 mt-6">
@@ -95,8 +95,8 @@ export default function HomePage() {
       </section>
 
       {/* THREE PILLARS */}
-      <section className="container-x py-24">
-        <div className="grid grid-cols-12 gap-10">
+      <section className="container-x py-12 md:py-16 lg:py-24">
+        <div className="grid grid-cols-12 gap-6 lg:gap-10">
           {[
             {
               num: "i.",
@@ -126,7 +126,7 @@ export default function HomePage() {
       </section>
 
       {/* EDITORIAL IMAGE */}
-      <section className="container-x py-12">
+      <section className="container-x py-8 md:py-10 lg:py-12">
         <div className="img-frame aspect-[21/9]">
           <Image
             src="/images/palais-de-justice-marseille.png"
@@ -145,8 +145,8 @@ export default function HomePage() {
       </section>
 
       {/* EXPERTISE TEASER */}
-      <section className="container-x py-24 hairline-b">
-        <div className="grid grid-cols-12 gap-8">
+      <section className="container-x py-12 md:py-16 lg:py-24 hairline-b">
+        <div className="grid grid-cols-12 gap-6 md:gap-8">
           <div className="col-span-12 md:col-span-4">
             <div className="t-eyebrow">— Domaines d'intervention</div>
           </div>
@@ -156,18 +156,18 @@ export default function HomePage() {
               <br />
               corporels, sans exception.
             </h2>
-            <ul className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-12">
+            <ul className="mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-12">
               {[
                 "Accidents de la circulation",
                 "Accidents médicaux",
                 "Accidents de la vie",
                 "Accidents du travail",
                 "Agressions & infractions",
-                "Préjudices d'affection",
+                "Militaires blessés",
               ].map((item, i) => (
                 <li
                   key={item}
-                  className="py-6 hairline-b flex items-baseline justify-between gap-6"
+                  className="py-4 md:py-6 hairline-b flex items-baseline justify-between gap-6"
                 >
                   <span className="font-serif text-xl">{item}</span>
                   <span
@@ -189,8 +189,8 @@ export default function HomePage() {
       </section>
 
       {/* APPROACH */}
-      <section className="container-x py-32">
-        <div className="grid grid-cols-12 gap-10 items-center">
+      <section className="container-x py-14 md:py-20 lg:py-32">
+        <div className="grid grid-cols-12 gap-8 lg:gap-10 items-center">
           <div className="col-span-12 md:col-span-5">
             <div
               className="img-frame placeholder aspect-[4/5]"
@@ -228,10 +228,10 @@ export default function HomePage() {
       </section>
 
       {/* PROCESS RIBBON */}
-      <section className="container-x py-20">
-        <div className="hairline pt-16">
+      <section className="container-x py-10 md:py-14 lg:py-20">
+        <div className="hairline pt-10 md:pt-14 lg:pt-16">
           <div className="t-eyebrow">— Comment se déroule un dossier</div>
-          <div className="grid grid-cols-12 gap-8 mt-10">
+          <div className="grid grid-cols-12 gap-6 md:gap-8 mt-8 md:mt-10">
             {[
               {
                 num: "01",
@@ -270,8 +270,8 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="container-x py-32 hairline-b">
-        <div className="grid grid-cols-12 gap-8 items-end">
+      <section className="container-x py-14 md:py-20 lg:py-32 hairline-b">
+        <div className="grid grid-cols-12 gap-6 md:gap-8 items-end">
           <div className="col-span-12 md:col-span-8">
             <div className="t-eyebrow">— Prendre contact</div>
             <h2

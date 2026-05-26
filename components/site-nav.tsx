@@ -86,14 +86,38 @@ export function SiteNav() {
       </div>
 
       <div className="nav__panel">
-        {navLinks.map((l) => (
-          <Link key={l.href} href={l.href} className="font-serif text-3xl">
-            {l.label}
+        <nav className="flex flex-col">
+          {navLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className={`py-5 hairline-b font-serif text-4xl${pathname === l.href ? " font-serif-italic" : ""}`}
+            >
+              {l.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="mt-auto pt-10 flex flex-col gap-3">
+          <div className="t-eyebrow mb-2">— Contact</div>
+          <a
+            href="tel:+33491000000"
+            className="font-serif text-2xl"
+            style={{ color: "var(--foreground)" }}
+          >
+            04 91 00 00 00
+          </a>
+          <a
+            href="mailto:contact@cohadon-avocat.fr"
+            className="text-sm"
+            style={{ color: "var(--ink-light)" }}
+          >
+            contact@cohadon-avocat.fr
+          </a>
+          <Link href="/contact" className="btn btn-primary mt-4 self-start">
+            Prendre rendez-vous <span className="arrow">→</span>
           </Link>
-        ))}
-        <Link href="/contact" className="btn btn-primary mt-4 self-start">
-          Prendre rendez-vous <span className="arrow">→</span>
-        </Link>
+        </div>
       </div>
     </header>
   )

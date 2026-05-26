@@ -1,26 +1,31 @@
 export const parcours = [
   {
-    year: "2018",
+    year: "2025",
+    title: "DU Droit de la responsabilité médicale",
+    institution: "Université Clermont Auvergne",
+  },
+  {
+    year: "2022",
     title: "Prestation de serment",
     institution: "Cour d'appel d'Aix-en-Provence",
   },
   {
-    year: "2017",
-    title: "CAPA — École des Avocats du Sud-Est",
-    institution: "EDA Sud-Est, Aix-en-Provence",
+    year: "2020–2021",
+    title: "CAPA — EFB",
+    institution: "École de Formation du Barreau",
   },
   {
-    year: "2016",
-    title: "Master II — Droit du dommage corporel",
-    institution: "Faculté de droit, Aix-Marseille Université",
+    year: "2016–2017",
+    title: "Master 2 — Droit des industries des produits de santé",
+    institution: "Faculté de Droit d'Angers",
   },
   {
-    year: "2015",
-    title: "Master I — Droit privé",
+    year: "2015–2016",
+    title: "Master 1 — Droit de la santé",
     institution: "Aix-Marseille Université",
   },
   {
-    year: "2014",
+    year: "2013–2015",
     title: "Licence de droit",
     institution: "Aix-Marseille Université",
   },

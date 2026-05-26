@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { ContactForm } from "@/components/contact-form"
+import { ConsultationForm } from "@/components/consultation-form"
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -12,7 +13,7 @@ export default function ContactPage() {
   return (
     <>
       {/* HERO */}
-      <section className="container-x pt-40 md:pt-48 pb-12">
+      <section className="container-x pt-32 md:pt-40 lg:pt-48 pb-8 md:pb-12">
         <div className="grid grid-cols-12 gap-8 items-end">
           <div className="col-span-12 lg:col-span-9">
             <div className="t-eyebrow">— Prendre contact</div>
@@ -37,8 +38,8 @@ export default function ContactPage() {
       </section>
 
       {/* FORM + INFOS */}
-      <section className="container-x py-20 hairline">
-        <div className="grid grid-cols-12 gap-10">
+      <section className="container-x py-10 md:py-14 lg:py-20 hairline">
+        <div className="grid grid-cols-12 gap-6 lg:gap-10">
           <div className="col-span-12 lg:col-span-7">
             <div className="t-eyebrow">— Formulaire</div>
             <ContactForm />
@@ -125,8 +126,41 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* CONSULTATION EN LIGNE */}
+      <section className="container-x py-14 md:py-20 lg:py-32 hairline-b" id="consultation">
+        <div className="grid grid-cols-12 gap-6 lg:gap-10">
+          <div className="col-span-12 lg:col-span-4">
+            <div className="t-eyebrow">— Consultation en ligne</div>
+            <h2 className="font-serif t-h1 mt-6">
+              Une question
+              <br />
+              <span className="font-serif-italic">simple ?</span>
+            </h2>
+            <p
+              className="mt-8 t-body max-w-sm"
+              style={{ color: "var(--ink-light)" }}
+            >
+              Pas besoin d'un rendez-vous formel pour obtenir une première
+              réponse. Posez votre question directement : je vous réponds
+              personnellement, sous 24 h par email ou sous 12 h par téléphone.
+            </p>
+            <p
+              className="mt-6 t-small"
+              style={{ color: "var(--muted-foreground)" }}
+            >
+              Vos informations sont strictement confidentielles et ne sont
+              jamais transmises à des tiers. Premier échange gratuit et sans
+              engagement.
+            </p>
+          </div>
+          <div className="col-span-12 lg:col-span-7 lg:col-start-6">
+            <ConsultationForm />
+          </div>
+        </div>
+      </section>
+
       {/* MAP */}
-      <section className="container-x py-20">
+      <section className="container-x py-10 md:py-14 lg:py-20">
         <div
           className="t-eyebrow mb-10"
           style={{ color: "var(--muted-foreground)" }}

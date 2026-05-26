@@ -3,17 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 
-const subjectOptions = [
-  "Accident de la circulation",
-  "Accident médical",
-  "Accident de la vie",
-  "Accident du travail",
-  "Agression / infraction",
-  "Militaire blessé",
-  "Autre",
-]
-
-export function ContactForm() {
+export function ConsultationForm() {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -24,7 +14,7 @@ export function ContactForm() {
     setError(null)
 
     const form = e.currentTarget
-    const data = Object.fromEntries(new FormData(form))
+    const data = { ...Object.fromEntries(new FormData(form)), _type: "consultation" }
 
     try {
       const res = await fetch("/api/contact", {
@@ -36,7 +26,7 @@ export function ContactForm() {
       setSubmitted(true)
       form.reset()
     } catch {
-      setError("Une erreur est survenue. Veuillez réessayer ou nous contacter par téléphone.")
+      setError("Une erreur est survenue. Veuillez réessayer ou nous appeler directement.")
     } finally {
       setLoading(false)
     }
@@ -45,11 +35,11 @@ export function ContactForm() {
   if (submitted) {
     return (
       <div className="mt-10 p-10 hairline">
-        <div className="t-eyebrow">— Message envoyé</div>
+        <div className="t-eyebrow">— Demande envoyée</div>
         <h3 className="font-serif text-3xl mt-4">Merci.</h3>
         <p className="mt-5 max-w-prose" style={{ color: "var(--ink-light)" }}>
-          Votre demande a bien été transmise au cabinet. Une réponse personnelle
-          vous sera adressée sous 48 heures ouvrées.
+          Votre question a bien été transmise. Je vous répondrai dans les
+          délais indiqués, de manière personnelle et confidentielle.
         </p>
       </div>
     )
@@ -58,9 +48,9 @@ export function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="mt-8 md:mt-10 grid grid-cols-2 gap-x-8 md:gap-x-10 gap-y-6 md:gap-y-8">
       <div className="field col-span-2 md:col-span-1">
-        <label htmlFor="firstname">Prénom</label>
+        <label htmlFor="cl-firstname">Prénom</label>
         <input
-          id="firstname"
+          id="cl-firstname"
           name="firstname"
           type="text"
           required
@@ -68,9 +58,9 @@ export function ContactForm() {
         />
       </div>
       <div className="field col-span-2 md:col-span-1">
-        <label htmlFor="lastname">Nom</label>
+        <label htmlFor="cl-lastname">Nom</label>
         <input
-          id="lastname"
+          id="cl-lastname"
           name="lastname"
           type="text"
           required
@@ -78,9 +68,9 @@ export function ContactForm() {
         />
       </div>
       <div className="field col-span-2 md:col-span-1">
-        <label htmlFor="email">Email</label>
+        <label htmlFor="cl-email">Email</label>
         <input
-          id="email"
+          id="cl-email"
           name="email"
           type="email"
           required
@@ -88,27 +78,53 @@ export function ContactForm() {
         />
       </div>
       <div className="field col-span-2 md:col-span-1">
-        <label htmlFor="phone">Téléphone</label>
-        <input id="phone" name="phone" type="tel" autoComplete="tel" />
+        <label htmlFor="cl-phone">Téléphone</label>
+        <input id="cl-phone" name="phone" type="tel" autoComplete="tel" />
       </div>
       <div className="field col-span-2">
-        <label htmlFor="subject">Nature de votre demande</label>
-        <select id="subject" name="subject" required>
-          <option value="">Sélectionnez —</option>
-          {subjectOptions.map((o) => (
-            <option key={o}>{o}</option>
-          ))}
-        </select>
-      </div>
-      <div className="field col-span-2">
-        <label htmlFor="message">Décrivez brièvement votre situation</label>
+        <label htmlFor="cl-question">Votre question</label>
         <textarea
-          id="message"
-          name="message"
-          rows={6}
+          id="cl-question"
+          name="question"
+          rows={5}
           required
-          placeholder="Évitez les informations sensibles à ce stade — un rendez-vous sera fixé pour les détails."
+          placeholder="Décrivez brièvement votre situation ou posez directement votre question."
         />
+      </div>
+
+      <div className="col-span-2">
+        <div className="t-small mb-4" style={{ color: "var(--muted-foreground)" }}>
+          — Mode de réponse souhaité
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4">
+          {[
+            { value: "email", label: "Email", sub: "réponse sous 24h" },
+            { value: "phone", label: "Téléphone", sub: "rappel sous 12h" },
+          ].map((opt) => (
+            <label
+              key={opt.value}
+              className="flex items-center gap-4 p-5 cursor-pointer hairline"
+              style={{ flex: 1 }}
+            >
+              <input
+                type="radio"
+                name="preferred_contact"
+                value={opt.value}
+                defaultChecked={opt.value === "email"}
+                className="shrink-0"
+              />
+              <span>
+                <span className="font-serif text-base">{opt.label}</span>
+                <span
+                  className="block t-small"
+                  style={{ color: "var(--muted-foreground)" }}
+                >
+                  {opt.sub}
+                </span>
+              </span>
+            </label>
+          ))}
+        </div>
       </div>
 
       {/* Honeypot */}
@@ -124,8 +140,8 @@ export function ContactForm() {
           <Link href="/mentions-legales" className="underline">
             mentions légales
           </Link>{" "}
-          et j'accepte que mes données soient utilisées uniquement pour répondre
-          à ma demande.
+          et j'accepte que mes données soient utilisées uniquement pour
+          répondre à ma demande.
         </span>
       </label>
 
@@ -140,11 +156,11 @@ export function ContactForm() {
 
       <div className="col-span-2 flex flex-wrap items-center gap-6 mt-4">
         <button type="submit" className="btn btn-primary" disabled={loading}>
-          {loading ? "Envoi…" : "Envoyer le message"}{" "}
+          {loading ? "Envoi…" : "Envoyer ma question"}{" "}
           {!loading && <span className="arrow">→</span>}
         </button>
         <span className="t-small" style={{ color: "var(--muted-foreground)" }}>
-          Vos échanges sont couverts par le secret professionnel.
+          Premier échange gratuit et sans engagement.
         </span>
       </div>
     </form>
