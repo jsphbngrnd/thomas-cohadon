@@ -137,7 +137,6 @@ export default function CabinetPage() {
             <div className="t-eyebrow">— L'esprit du sportif</div>
             <h2 className="font-serif t-h1 mt-6">
               On ne gagne pas
-              <br />
               en <span className="font-serif-italic">renonçant.</span>
             </h2>
           </div>
