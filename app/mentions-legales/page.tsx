@@ -151,6 +151,18 @@ export default function MentionsLegalesPage() {
                 {s.content}
               </section>
             ))}
+            <p className="t-small" style={{ color: "var(--muted-foreground)" }}>
+              Site conçu et développé par{" "}
+              <a
+                href="https://josephbongrand.work/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                Joseph Bongrand
+              </a>
+              .
+            </p>
           </div>
         </div>
       </section>
