@@ -111,7 +111,7 @@ export default function HonorairesPage() {
                   body: "Vous ne payez rien avant d'être indemnisé. Mon intérêt est aligné avec le vôtre — obtenir la meilleure indemnisation possible.",
                 },
               ].map((item) => (
-                <div key={item.title} className="card-quiet pr-8">
+                <div key={item.title} className="card-quiet pr-8" style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
                   <h3 className="font-serif text-xl">{item.title}</h3>
                   <p className="mt-3 text-sm" style={{ color: "var(--ink-light)" }}>
                     {item.body}
