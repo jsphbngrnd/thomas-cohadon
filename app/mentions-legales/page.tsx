@@ -18,15 +18,15 @@ const sections = [
         <br />
         Maître Thomas Cohadon, avocat inscrit au Barreau de Marseille
         <br />
-        12 rue Grignan — 13006 Marseille
+        35 rue Saint-Jacques — 13006 Marseille
         <br />
-        Téléphone&nbsp;: 04 91 00 00 00
+        Téléphone&nbsp;: 06 40 13 51 76
         <br />
-        Email&nbsp;: contact@cohadon-avocat.fr
+        Email&nbsp;: tc@cohadon-avocat.fr
         <br />
-        SIRET&nbsp;: 000 000 000 00000
+        SIRET&nbsp;: 909 056 640 00016
         <br />
-        Numéro d'identification TVA intracommunautaire&nbsp;: FR00 000000000
+        Numéro d'identification TVA intracommunautaire&nbsp;: FR91909056640
         <br />
         Directeur de la publication&nbsp;: Maître Thomas Cohadon.
       </p>
@@ -71,10 +71,10 @@ const sections = [
           d'opposition, de portabilité et d'effacement de vos données. Pour
           l'exercer, écrivez à{" "}
           <a
-            href="mailto:contact@cohadon-avocat.fr"
+            href="mailto:tc@cohadon-avocat.fr"
             className="underline"
           >
-            contact@cohadon-avocat.fr
+            tc@cohadon-avocat.fr
           </a>
           .
         </p>

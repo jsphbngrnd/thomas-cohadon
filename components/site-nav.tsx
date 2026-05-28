@@ -7,7 +7,9 @@ import { usePathname } from "next/navigation"
 const navLinks = [
   { href: "/cabinet", label: "Le cabinet" },
   { href: "/expertise", label: "Expertise" },
+  { href: "/honoraires", label: "Honoraires" },
   { href: "/contact", label: "Contact" },
+  { href: "/consultation", label: "Consultation en ligne" },
 ]
 
 export function SiteNav() {
@@ -40,7 +42,7 @@ export function SiteNav() {
           Thomas <span className="font-serif-italic">Cohadon</span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-10">
+        <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((l) => (
             <Link
               key={l.href}
@@ -50,9 +52,6 @@ export function SiteNav() {
               {l.label}
             </Link>
           ))}
-          <Link href="/contact" className="btn btn-primary text-xs">
-            Prendre contact <span className="arrow">→</span>
-          </Link>
         </nav>
 
         <button
@@ -101,18 +100,18 @@ export function SiteNav() {
         <div className="mt-auto pt-10 flex flex-col gap-3">
           <div className="t-eyebrow mb-2">— Contact</div>
           <a
-            href="tel:+33491000000"
+            href="tel:+33640135176"
             className="font-serif text-2xl"
             style={{ color: "var(--foreground)" }}
           >
-            04 91 00 00 00
+            06 40 13 51 76
           </a>
           <a
-            href="mailto:contact@cohadon-avocat.fr"
+            href="mailto:tc@cohadon-avocat.fr"
             className="text-sm"
             style={{ color: "var(--ink-light)" }}
           >
-            contact@cohadon-avocat.fr
+            tc@cohadon-avocat.fr
           </a>
           <Link href="/contact" className="btn btn-primary mt-4 self-start">
             Prendre rendez-vous <span className="arrow">→</span>

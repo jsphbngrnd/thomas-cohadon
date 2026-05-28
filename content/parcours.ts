@@ -12,12 +12,12 @@ export const parcours = [
   {
     year: "2020–2021",
     title: "CAPA — EFB",
-    institution: "École de Formation du Barreau",
+    institution: "École de Formation du Barreau, Paris",
   },
   {
     year: "2016–2017",
     title: "Master 2 — Droit des industries des produits de santé",
-    institution: "Faculté de Droit d'Angers",
+    institution: "Université Paris Descartes",
   },
   {
     year: "2015–2016",

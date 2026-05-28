@@ -61,24 +61,6 @@ export default function CabinetPage() {
               droit du dommage corporel et à la défense des victimes.
             </div>
           </div>
-          <div className="col-span-12 lg:col-span-4 lg:col-start-9 flex flex-col justify-end">
-            <ul className="space-y-3 text-sm" style={{ color: "var(--ink-light)" }}>
-              {[
-                ["Barreau", "Marseille"],
-                ["Serment", "2022"],
-                ["Spécialité", "Dommage corporel"],
-                ["Langues", "FR · EN"],
-              ].map(([label, value]) => (
-                <li
-                  key={label}
-                  className="flex justify-between gap-6 hairline-b pb-3"
-                >
-                  <span>{label}</span>
-                  <span style={{ color: "var(--foreground)" }}>{value}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </section>
 
@@ -162,9 +144,7 @@ export default function CabinetPage() {
       <section className="container-x py-14 md:py-20 lg:py-32">
         <div className="t-eyebrow">— Mes engagements</div>
         <h2 className="font-serif t-h1 mt-6 max-w-3xl">
-          Quatre engagements concrets,{" "}
-          <span className="font-serif-italic">vérifiables,</span> qui
-          structurent chaque collaboration.
+          Cinq engagements concrets qui structurent chaque collaboration.
         </h2>
         <div className="grid grid-cols-12 gap-6 lg:gap-10 mt-10 md:mt-14 lg:mt-16">
           {engagements.map((v) => (

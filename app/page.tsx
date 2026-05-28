@@ -55,11 +55,10 @@ export default function HomePage() {
               data-placeholder="Marseille — photo à fournir"
             />
             <div
-              className="mt-4 flex items-center justify-between text-xs"
+              className="mt-4 text-xs"
               style={{ color: "var(--muted-foreground)" }}
             >
-              <span>— Marseille</span>
-              <span>Inscrit au Barreau · Toque 1834</span>
+              — Marseille
             </div>
           </div>
         </div>
@@ -246,7 +245,7 @@ export default function HomePage() {
               {
                 num: "03",
                 title: "Expertise & négociation",
-                body: "Assistance lors des expertises médicales, échanges avec l'assureur ou le FGTI.",
+                body: "Assistance lors des expertises médicales, échanges avec les débiteurs d'indemnisation.",
               },
               {
                 num: "04",
@@ -269,36 +268,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="container-x py-14 md:py-20 lg:py-32 hairline-b">
-        <div className="grid grid-cols-12 gap-6 md:gap-8 items-end">
-          <div className="col-span-12 md:col-span-8">
-            <div className="t-eyebrow">— Prendre contact</div>
-            <h2
-              className="font-serif t-display mt-6"
-              style={{ lineHeight: 1.02 }}
-            >
-              Parlons de votre{" "}
-              <span className="font-serif-italic">situation.</span>
-            </h2>
-          </div>
-          <div className="col-span-12 md:col-span-4 prose-editorial t-body">
-            <p>
-              Un premier échange est offert et reste strictement confidentiel.
-              Il permet d'évaluer si le cabinet est le bon interlocuteur pour
-              vous accompagner.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-4">
-              <Link href="/contact" className="btn btn-primary">
-                Prendre rendez-vous <span className="arrow">→</span>
-              </Link>
-              <a href="tel:+33491000000" className="btn btn-link">
-                04 91 00 00 00
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   )
 }

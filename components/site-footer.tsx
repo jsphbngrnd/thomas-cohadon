@@ -12,14 +12,14 @@ export function SiteFooter() {
             className="mt-3 text-sm max-w-xs"
             style={{ color: "var(--ink-light)" }}
           >
-            Avocat au Barreau de Marseille — droit du dommage corporel.
+            Thomas Cohadon — avocat au barreau de Marseille.
           </div>
         </div>
 
         <div className="col-span-6 md:col-span-3">
           <div className="t-eyebrow">Cabinet</div>
           <ul className="mt-5 space-y-2 text-sm">
-            <li>12 rue Grignan</li>
+            <li>35 rue Saint-Jacques</li>
             <li>13006 Marseille</li>
             <li>France</li>
           </ul>
@@ -29,16 +29,16 @@ export function SiteFooter() {
           <div className="t-eyebrow">Contact</div>
           <ul className="mt-5 space-y-2 text-sm">
             <li>
-              <a href="tel:+33491000000" className="hover:underline">
-                04 91 00 00 00
+              <a href="tel:+33640135176" className="hover:underline">
+                06 40 13 51 76
               </a>
             </li>
             <li>
               <a
-                href="mailto:contact@cohadon-avocat.fr"
+                href="mailto:tc@cohadon-avocat.fr"
                 className="hover:underline"
               >
-                contact@cohadon-avocat.fr
+                tc@cohadon-avocat.fr
               </a>
             </li>
           </ul>

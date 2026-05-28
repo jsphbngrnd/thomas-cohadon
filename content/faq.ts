@@ -23,7 +23,7 @@ export const faqItems = [
   {
     question: "Le cabinet intervient-il hors de Marseille ?",
     answer:
-      "Oui. Le cabinet intervient partout en France et plus particulièrement dans le ressort des Cours d'appel d'Aix-en-Provence, Nîmes et Montpellier. Les premiers échanges peuvent se tenir en visioconférence.",
+      "Oui, le cabinet intervient partout en France. Les premiers échanges peuvent se tenir en visioconférence.",
   },
   {
     question: "Que se passe-t-il si je perds le procès ?",

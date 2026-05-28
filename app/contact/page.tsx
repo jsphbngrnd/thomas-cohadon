@@ -1,11 +1,10 @@
 import type { Metadata } from "next"
-import { ContactForm } from "@/components/contact-form"
-import { ConsultationForm } from "@/components/consultation-form"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Prendre contact avec le cabinet de Maître Thomas Cohadon, avocat en dommage corporel à Marseille.",
+    "Coordonnées du cabinet de Maître Thomas Cohadon, avocat en dommage corporel à Marseille. Premier rendez-vous gratuit.",
   alternates: { canonical: "https://cohadon-avocat.fr/contact" },
 }
 
@@ -14,7 +13,7 @@ export default function ContactPage() {
     <>
       {/* HERO */}
       <section className="container-x pt-32 md:pt-40 lg:pt-48 pb-8 md:pb-12">
-        <div className="grid grid-cols-12 gap-8 items-end">
+        <div className="grid grid-cols-12 gap-6 md:gap-8">
           <div className="col-span-12 lg:col-span-9">
             <div className="t-eyebrow">— Prendre contact</div>
             <h1
@@ -27,179 +26,121 @@ export default function ContactPage() {
             </h1>
           </div>
           <div
-            className="col-span-12 lg:col-span-3 t-lead"
+            className="col-span-12 lg:col-span-7 mt-6 t-lead"
             style={{ color: "var(--ink-light)" }}
           >
-            Premier échange offert, réponse sous 48 h ouvrées.
+            Le premier rendez-vous est gratuit et sans engagement. Appelez
+            directement ou envoyez un email — je vous réponds personnellement.
           </div>
         </div>
       </section>
 
-      {/* FORM + INFOS */}
-      <section className="container-x py-10 md:py-14 lg:py-20 hairline">
+      {/* COORDONNÉES */}
+      <section className="container-x py-10 md:py-14 lg:py-20 hairline hairline-b">
         <div className="grid grid-cols-12 gap-6 lg:gap-10">
-          <div className="col-span-12 lg:col-span-7">
-            <div className="t-eyebrow">— Formulaire</div>
-            <ContactForm />
-          </div>
-
-          <aside className="col-span-12 lg:col-span-4 lg:col-start-9">
+          <div className="col-span-12 lg:col-span-5">
             <div className="t-eyebrow">— Cabinet</div>
             <div className="mt-10 space-y-10">
-              {[
-                {
-                  title: "Adresse",
-                  content: (
-                    <p style={{ color: "var(--ink-light)" }}>
-                      12 rue Grignan
-                      <br />
-                      13006 Marseille
-                      <br />
-                      France
-                    </p>
-                  ),
-                },
-                {
-                  title: "Téléphone",
-                  content: (
-                    <p style={{ color: "var(--ink-light)" }}>
-                      <a href="tel:+33491000000" className="hover:underline">
-                        04 91 00 00 00
-                      </a>
-                    </p>
-                  ),
-                },
-                {
-                  title: "Email",
-                  content: (
-                    <p style={{ color: "var(--ink-light)" }}>
-                      <a
-                        href="mailto:contact@cohadon-avocat.fr"
-                        className="hover:underline"
-                      >
-                        contact@cohadon-avocat.fr
-                      </a>
-                    </p>
-                  ),
-                },
-                {
-                  title: "Horaires",
-                  content: (
-                    <ul
-                      className="space-y-1"
-                      style={{ color: "var(--ink-light)" }}
-                    >
-                      <li className="flex justify-between gap-4">
-                        <span>Lun — Ven</span>
-                        <span>09h00 — 19h00</span>
-                      </li>
-                      <li className="flex justify-between gap-4">
-                        <span>Samedi</span>
-                        <span>Sur rendez-vous</span>
-                      </li>
-                    </ul>
-                  ),
-                },
-                {
-                  title: "Accès",
-                  content: (
-                    <ul
-                      className="space-y-1 text-sm"
-                      style={{ color: "var(--ink-light)" }}
-                    >
-                      <li>Métro · Estrangin Préfecture (M1)</li>
-                      <li>Bus · 18 · 41 · 54</li>
-                      <li>Parking · Préfecture</li>
-                    </ul>
-                  ),
-                },
-              ].map((block) => (
-                <div key={block.title}>
-                  <h3 className="font-serif text-2xl">{block.title}</h3>
-                  <div className="mt-3">{block.content}</div>
+              <div>
+                <h2 className="font-serif text-2xl">Adresse</h2>
+                <p className="mt-3" style={{ color: "var(--ink-light)" }}>
+                  35 rue Saint-Jacques
+                  <br />
+                  13006 Marseille
+                  <br />
+                  France
+                </p>
+              </div>
+              <div>
+                <h2 className="font-serif text-2xl">Téléphone</h2>
+                <p className="mt-3">
+                  <a
+                    href="tel:+33640135176"
+                    className="font-serif text-2xl hover:underline"
+                    style={{ color: "var(--foreground)" }}
+                  >
+                    06 40 13 51 76
+                  </a>
+                </p>
+              </div>
+              <div>
+                <h2 className="font-serif text-2xl">Email</h2>
+                <p className="mt-3">
+                  <a
+                    href="mailto:tc@cohadon-avocat.fr"
+                    className="hover:underline"
+                    style={{ color: "var(--ink-light)" }}
+                  >
+                    tc@cohadon-avocat.fr
+                  </a>
+                </p>
+              </div>
+              <div>
+                <h2 className="font-serif text-2xl">Horaires</h2>
+                <ul className="mt-3 space-y-1" style={{ color: "var(--ink-light)" }}>
+                  <li className="flex justify-between gap-4">
+                    <span>Lun — Ven</span>
+                    <span>09h00 — 19h00</span>
+                  </li>
+                </ul>
+                <p
+                  className="mt-3 t-small"
+                  style={{ color: "var(--muted-foreground)" }}
+                >
+                  Sur rendez-vous uniquement.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-12 flex flex-wrap gap-4">
+              <a href="tel:+33640135176" className="btn btn-primary">
+                Appeler <span className="arrow">→</span>
+              </a>
+              <Link href="/consultation" className="btn btn-ghost">
+                Consultation en ligne <span className="arrow">→</span>
+              </Link>
+            </div>
+          </div>
+
+          <aside className="col-span-12 lg:col-span-6 lg:col-start-7">
+            <div className="t-eyebrow mb-10">— Le cabinet, à Marseille</div>
+            <div className="map-frame relative" style={{ aspectRatio: "4/3" }}>
+              <div className="map-pin" style={{ left: "48%", top: "54%" }} />
+              <div
+                className="absolute top-6 left-6 p-5 max-w-xs"
+                style={{
+                  background: "var(--background)",
+                  border: "1px solid var(--rule)",
+                }}
+              >
+                <div className="font-serif text-lg">Cabinet Cohadon</div>
+                <div
+                  className="t-small mt-2"
+                  style={{ color: "var(--muted-foreground)" }}
+                >
+                  35 rue Saint-Jacques · 13006 Marseille
                 </div>
-              ))}
+                <a
+                  className="btn btn-link mt-4 text-xs"
+                  href="https://maps.google.com/?q=35+rue+Saint-Jacques+Marseille"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Voir sur Google Maps →
+                </a>
+              </div>
+              <div
+                className="absolute bottom-6 right-6 text-xs font-serif italic px-3 py-2"
+                style={{
+                  background: "var(--background)",
+                  border: "1px solid var(--rule)",
+                  color: "var(--muted-foreground)",
+                }}
+              >
+                6ᵉ arrondissement — quartier Préfecture
+              </div>
             </div>
           </aside>
-        </div>
-      </section>
-
-      {/* CONSULTATION EN LIGNE */}
-      <section className="container-x py-14 md:py-20 lg:py-32 hairline-b" id="consultation">
-        <div className="grid grid-cols-12 gap-6 lg:gap-10">
-          <div className="col-span-12 lg:col-span-4">
-            <div className="t-eyebrow">— Consultation en ligne</div>
-            <h2 className="font-serif t-h1 mt-6">
-              Une question
-              <br />
-              <span className="font-serif-italic">simple ?</span>
-            </h2>
-            <p
-              className="mt-8 t-body max-w-sm"
-              style={{ color: "var(--ink-light)" }}
-            >
-              Pas besoin d'un rendez-vous formel pour obtenir une première
-              réponse. Posez votre question directement : je vous réponds
-              personnellement, sous 24 h par email ou sous 12 h par téléphone.
-            </p>
-            <p
-              className="mt-6 t-small"
-              style={{ color: "var(--muted-foreground)" }}
-            >
-              Vos informations sont strictement confidentielles et ne sont
-              jamais transmises à des tiers. Premier échange gratuit et sans
-              engagement.
-            </p>
-          </div>
-          <div className="col-span-12 lg:col-span-7 lg:col-start-6">
-            <ConsultationForm />
-          </div>
-        </div>
-      </section>
-
-      {/* MAP */}
-      <section className="container-x py-10 md:py-14 lg:py-20">
-        <div
-          className="t-eyebrow mb-10"
-          style={{ color: "var(--muted-foreground)" }}
-        >
-          — Le cabinet, à Marseille
-        </div>
-        <div className="map-frame relative" style={{ aspectRatio: "16/7" }}>
-          <div className="map-pin" style={{ left: "48%", top: "54%" }} />
-          <div
-            className="absolute top-6 left-6 p-5 max-w-xs"
-            style={{
-              background: "var(--background)",
-              border: "1px solid var(--rule)",
-            }}
-          >
-            <div className="font-serif text-lg">Cabinet Cohadon</div>
-            <div
-              className="t-small mt-2"
-              style={{ color: "var(--muted-foreground)" }}
-            >
-              12 rue Grignan · 13006 Marseille
-            </div>
-            <a
-              className="btn btn-link mt-4 text-xs"
-              href="https://maps.google.com/?q=12+rue+Grignan+Marseille"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Voir sur Google Maps →
-            </a>
-          </div>
-          <div
-            className="absolute bottom-6 right-6 text-xs font-serif italic px-3 py-2"
-            style={{
-              background: "var(--background)",
-              border: "1px solid var(--rule)",
-              color: "var(--muted-foreground)",
-            }}
-          >
-            6ᵉ arrondissement — quartier Préfecture
-          </div>
         </div>
       </section>
     </>

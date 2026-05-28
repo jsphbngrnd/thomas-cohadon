@@ -82,6 +82,19 @@ export function ConsultationForm() {
         <input id="cl-phone" name="phone" type="tel" autoComplete="tel" />
       </div>
       <div className="field col-span-2">
+        <label htmlFor="cl-subject">Nature de votre demande</label>
+        <select id="cl-subject" name="subject" required>
+          <option value="">Sélectionnez —</option>
+          <option>Accident de la circulation</option>
+          <option>Accident médical</option>
+          <option>Accident de la vie</option>
+          <option>Accident du travail</option>
+          <option>Agression / infraction</option>
+          <option>Militaire blessé</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div className="field col-span-2">
         <label htmlFor="cl-question">Votre question</label>
         <textarea
           id="cl-question"
