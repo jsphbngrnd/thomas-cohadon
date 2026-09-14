@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation"
 
 const navLinks = [
   { href: "/cabinet", label: "Le cabinet" },
-  { href: "/expertise", label: "Expertise" },
+  { href: "/interventions", label: "Domaines d'intervention" },
   { href: "/honoraires", label: "Honoraires" },
   { href: "/contact", label: "Contact" },
   { href: "/consultation", label: "Consultation en ligne" },

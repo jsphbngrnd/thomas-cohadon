@@ -12,7 +12,7 @@ export function SiteFooter() {
             className="mt-3 text-sm max-w-xs"
             style={{ color: "var(--ink-light)" }}
           >
-            Thomas Cohadon — avocat au barreau de Marseille.
+            Thomas Cohadon EI — avocat au barreau de Marseille.
           </div>
         </div>
 
@@ -53,8 +53,8 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
-              <Link href="/expertise" className="hover:underline">
-                Expertise
+              <Link href="/interventions" className="hover:underline">
+                Domaines d'intervention
               </Link>
             </li>
             <li>
@@ -72,7 +72,7 @@ export function SiteFooter() {
       </div>
 
       <div className="mt-16 pt-6 hairline flex flex-col md:flex-row md:justify-between gap-3 text-xs" style={{ color: "var(--muted-foreground)" }}>
-        <span>© {new Date().getFullYear()} Thomas Cohadon — Tous droits réservés</span>
+        <span>© {new Date().getFullYear()} Thomas Cohadon, entrepreneur individuel (EI) — Tous droits réservés</span>
         <span>Site soumis aux règles déontologiques de la profession d'avocat</span>
       </div>
     </footer>

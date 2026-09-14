@@ -132,6 +132,66 @@ export default function HonorairesPage() {
         </div>
       </section>
 
+      <section className="container-x py-10 md:py-14 lg:py-20 hairline-b">
+        <div className="grid grid-cols-12 gap-6 md:gap-8">
+          <div className="col-span-12 md:col-span-4">
+            <div className="t-eyebrow">— Convention & recours</div>
+            <h2 className="font-serif t-h2 mt-6">
+              Une convention écrite,{" "}
+              <span className="font-serif-italic">avant</span> toute mission.
+            </h2>
+          </div>
+          <div className="col-span-12 md:col-span-7 md:col-start-6 prose-editorial t-body">
+            <p>
+              Les honoraires, qui sont libres, sont déterminés notamment selon
+              le temps consacré à l'affaire, le travail de recherche
+              nécessaire, la nature et la difficulté du dossier, l'importance
+              des intérêts en cause, l'incidence des charges du cabinet, ainsi
+              que les avantages et le résultat obtenus, et la situation
+              personnelle du client.
+            </p>
+            <p>
+              Une facturation au forfait peut également être pratiquée. Dans
+              ce cas, l'honoraire est déterminé à l'avance, d'un commun
+              accord. Une convention d'honoraires est conclue entre l'avocat
+              et son client. Depuis la loi du 8 août 2015 dite «&nbsp;loi
+              Macron&nbsp;» (article 51), elle est obligatoire pour toute
+              matière et tout type d'intervention. Elle doit être signée
+              avant toute mission. Elle peut prévoir qu'une partie des
+              honoraires dépendra du résultat obtenu.
+            </p>
+            <p>
+              Vous pouvez saisir le Bâtonnier du Barreau de Marseille pour
+              contester les honoraires&nbsp;: Ordre des Avocats du Barreau de
+              Marseille — Service des honoraires, 51 rue Grignan, 13006
+              Marseille.
+            </p>
+            <p>
+              Vous pouvez également recourir au médiateur de la consommation
+              de la profession d'avocat (articles L. 612-1 et suivants du Code
+              de la consommation)&nbsp;: Sandra Werey, 180 boulevard
+              Haussmann, 75008 Paris —{" "}
+              <a
+                href="mailto:mediateur-conso@mediateur-consommation-avocat.fr"
+                className="underline"
+              >
+                mediateur-conso@mediateur-consommation-avocat.fr
+              </a>
+              {" — "}
+              <a
+                href="https://mediateur-consommation-avocat.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                mediateur-consommation-avocat.fr
+              </a>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="container-x py-14 md:py-20 lg:py-32">
         <div className="grid grid-cols-12 gap-6 md:gap-8 items-end">

@@ -43,8 +43,8 @@ export default function HomePage() {
               <Link href="/contact" className="btn btn-primary">
                 Premier échange confidentiel <span className="arrow">→</span>
               </Link>
-              <Link href="/expertise" className="btn btn-link">
-                Découvrir l'expertise
+              <Link href="/interventions" className="btn btn-link">
+                Domaines d'intervention
               </Link>
             </div>
           </div>
@@ -179,7 +179,7 @@ export default function HomePage() {
               ))}
             </ul>
             <div className="mt-10">
-              <Link href="/expertise" className="btn btn-link">
+              <Link href="/interventions" className="btn btn-link">
                 Voir le détail des prestations →
               </Link>
             </div>
@@ -244,7 +244,7 @@ export default function HomePage() {
               },
               {
                 num: "03",
-                title: "Expertise & négociation",
+                title: "Assistance médicale & négociation",
                 body: "Assistance lors des expertises médicales, échanges avec les débiteurs d'indemnisation.",
               },
               {
