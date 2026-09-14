@@ -43,7 +43,7 @@ export const domains = [
     num: "06",
     title: "Militaires blessés",
     subtitle: "Code des pensions militaires d'invalidité",
-    tagline: "Accompagnement spécialisé des militaires en service.",
+    tagline: "Accompagnement des militaires blessés en service.",
     body: "Les militaires et gendarmes blessés en service — en opérations extérieures (OPEX) ou sur le territoire national — bénéficient d'un régime d'indemnisation spécifique, distinct du droit commun, articulé autour de trois dispositifs complémentaires.\n\nLa Pension Militaire d'Invalidité (PMI) indemnise forfaitairement le militaire blessé dès lors que la blessure est imputable au service et que les seuils de taux d'invalidité sont atteints. La jurisprudence Brugnot (Conseil d'État, 2005, complétée par l'arrêt Hamblin, 2013) ouvre droit à une indemnisation complémentaire des préjudices non couverts. Enfin, une réparation intégrale est possible lorsque le dommage résulte d'une faute de l'État.",
     procedure: "L'accompagnement porte sur la constitution du dossier de PMI, l'assistance lors des expertises médicales déterminant le taux d'invalidité, la contestation des décisions de la commission de réforme, et les recours contentieux devant le tribunal administratif en vue d'une indemnisation intégrale des préjudices.",
   },

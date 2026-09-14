@@ -5,10 +5,10 @@ import { FaqAccordion } from "@/components/faq-accordion"
 import { faqItems } from "@/content/faq"
 
 export const metadata: Metadata = {
-  title: "Expertise",
+  title: "Domaines d'intervention",
   description:
-    "Domaines d'intervention, postes de préjudice, honoraires et questions fréquentes en droit du dommage corporel.",
-  alternates: { canonical: "https://cohadon-avocat.fr/expertise" },
+    "Domaines d'intervention, postes de préjudice et questions fréquentes en droit du dommage corporel.",
+  alternates: { canonical: "https://cohadon-avocat.fr/interventions" },
 }
 
 const dintilhac = [
@@ -76,14 +76,14 @@ const dintilhac = [
   },
 ]
 
-export default function ExpertisePage() {
+export default function InterventionsPage() {
   return (
     <>
       {/* HERO */}
       <section className="container-x pt-32 md:pt-40 lg:pt-48 pb-10 md:pb-14 lg:pb-20">
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-9">
-            <div className="t-eyebrow">— Domaine d'expertise</div>
+            <div className="t-eyebrow">— Domaines d'intervention</div>
             <h1
               className="font-serif t-display mt-6"
               style={{ lineHeight: 1.02 }}

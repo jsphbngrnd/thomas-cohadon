@@ -16,7 +16,8 @@ const sections = [
       <p className="mt-6">
         Le présent site est édité par&nbsp;:
         <br />
-        Maître Thomas Cohadon, avocat inscrit au Barreau de Marseille
+        Maître Thomas Cohadon, entrepreneur individuel (EI), avocat inscrit au
+        Barreau de Marseille
         <br />
         35 rue Saint-Jacques — 13006 Marseille
         <br />
@@ -28,7 +29,8 @@ const sections = [
         <br />
         Numéro d'identification TVA intracommunautaire&nbsp;: FR91909056640
         <br />
-        Directeur de la publication&nbsp;: Maître Thomas Cohadon.
+        Directeur de la publication&nbsp;: Maître Thomas Cohadon, entrepreneur
+        individuel (EI).
       </p>
     ),
   },
@@ -39,6 +41,23 @@ const sections = [
       <p className="mt-6">
         Le site est hébergé par Vercel Inc., 440 N Barranca Avenue #4133,
         Covina, CA 91723, États-Unis.
+        <br />
+        Téléphone&nbsp;: +1 (951) 383-6898
+        <br />
+        Email&nbsp;:{" "}
+        <a href="mailto:privacy@vercel.com" className="underline">
+          privacy@vercel.com
+        </a>
+        <br />
+        Site&nbsp;:{" "}
+        <a
+          href="https://vercel.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          vercel.com
+        </a>
       </p>
     ),
   },
@@ -60,25 +79,75 @@ const sections = [
     content: (
       <>
         <p className="mt-6">
-          Les informations transmises via le formulaire de contact sont utilisées
-          exclusivement pour traiter votre demande et sont protégées par le
-          secret professionnel de l'avocat. Elles ne font l'objet d'aucune
+          En application des articles 13 et 14 du Règlement européen général
+          sur la protection des données (2016/679) et de l'article 32 de la
+          loi Informatique et Libertés du 6 janvier 1978 modifiée, le
+          Directeur de la publication du site vous informe que&nbsp;:
+        </p>
+        <p>
+          <strong>Qui protège&nbsp;?</strong> Le responsable du traitement est
+          Maître Thomas Cohadon, entrepreneur individuel (EI), 35 rue
+          Saint-Jacques, 13006 Marseille —{" "}
+          <a href="mailto:tc@cohadon-avocat.fr" className="underline">
+            tc@cohadon-avocat.fr
+          </a>
+          , 06 40 13 51 76.
+        </p>
+        <p>
+          <strong>Qu'est-ce qui est protégé&nbsp;?</strong> L'ensemble de vos
+          données personnelles, notamment celles transmises lors d'une prise
+          de contact, d'une demande de rendez-vous ou dans le cadre du
+          traitement de votre dossier. Elles sont également protégées par le
+          secret professionnel de l'avocat et ne font l'objet d'aucune
           cession ni d'aucun traitement commercial.
         </p>
         <p>
-          Conformément au Règlement général sur la protection des données
-          (RGPD), vous disposez d'un droit d'accès, de rectification,
-          d'opposition, de portabilité et d'effacement de vos données. Pour
-          l'exercer, écrivez à{" "}
-          <a
-            href="mailto:tc@cohadon-avocat.fr"
-            className="underline"
-          >
+          <strong>Pourquoi&nbsp;?</strong> Pour la protection de votre vie
+          privée, dans le cadre du traitement de votre dossier — qu'il
+          s'agisse d'un dossier juridique, judiciaire ou d'arbitrage — ainsi
+          que pour l'établissement d'un devis ou la prise d'un rendez-vous.
+        </p>
+        <p>
+          <strong>Où&nbsp;?</strong> Dans un registre tenu par Maître Thomas
+          Cohadon.
+        </p>
+        <p>
+          <strong>Jusqu'à quand&nbsp;?</strong> Vos données sont traitées et
+          conservées dès votre prise d'attache, y compris pour le simple
+          établissement d'un devis ou lors de la prise d'un rendez-vous. Elles
+          ne sont conservées que quatre semaines si le rendez-vous n'est pas
+          honoré. Dans les autres cas, elles sont conservées pendant cinq ans
+          à compter du dernier acte juridique ou judiciaire réalisé par
+          Maître Thomas Cohadon.
+        </p>
+        <p>
+          <strong>Comment&nbsp;?</strong> Par un système informatique protégé
+          et sécurisé, ainsi que par des locaux et un système informatique
+          protégés et sécurisés.
+        </p>
+        <p>
+          Vous disposez d'un droit d'accès, de rectification, d'opposition, de
+          portabilité et d'effacement de vos données. Pour l'exercer, écrivez
+          à{" "}
+          <a href="mailto:tc@cohadon-avocat.fr" className="underline">
             tc@cohadon-avocat.fr
           </a>
-          .
+          . Vous pouvez également adresser une réclamation à la CNIL.
         </p>
       </>
+    ),
+  },
+  {
+    id: "assurance",
+    title: "Assurance responsabilité civile professionnelle",
+    content: (
+      <p className="mt-6">
+        Conformément aux règles déontologiques de la profession d'avocat,
+        Maître Thomas Cohadon est titulaire d'une assurance de
+        responsabilité civile professionnelle. Le nom de l'assureur, le
+        numéro du contrat, l'adresse et le numéro de téléphone de
+        l'assurance seront indiqués ici dès qu'ils auront été communiqués.
+      </p>
     ),
   },
   {
@@ -106,9 +175,47 @@ const sections = [
           commerciale.
         </p>
         <p>
-          Pour toute réclamation, le client peut saisir le Bâtonnier de l'Ordre
-          des Avocats de Marseille — Maison de l'Avocat, 51 rue Grignan, 13006
-          Marseille.
+          Pour toute réclamation relative aux honoraires, le client peut
+          saisir le Bâtonnier du Barreau de Marseille — Service des
+          honoraires, 51 rue Grignan, 13006 Marseille.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "mediation",
+    title: "Médiation de la consommation",
+    content: (
+      <>
+        <p className="mt-6">
+          Conformément aux articles L. 612-1 et suivants du Code de la
+          consommation, le client consommateur a la possibilité de recourir
+          gratuitement au médiateur de la consommation de la profession
+          d'avocat&nbsp;:
+        </p>
+        <p>
+          Sandra Werey, médiatrice de la consommation de la profession
+          d'avocat
+          <br />
+          180 boulevard Haussmann — 75008 Paris
+          <br />
+          Courriel&nbsp;:{" "}
+          <a
+            href="mailto:mediateur-conso@mediateur-consommation-avocat.fr"
+            className="underline"
+          >
+            mediateur-conso@mediateur-consommation-avocat.fr
+          </a>
+          <br />
+          Site&nbsp;:{" "}
+          <a
+            href="https://mediateur-consommation-avocat.fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            mediateur-consommation-avocat.fr
+          </a>
         </p>
       </>
     ),

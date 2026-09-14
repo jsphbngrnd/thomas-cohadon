@@ -17,7 +17,7 @@ const engagements = [
   },
   {
     n: "— 02",
-    title: "Expertise juridique",
+    title: "Rigueur juridique",
     body: "Connaissance approfondie du droit du dommage corporel pour défendre vos droits avec précision.",
   },
   {
