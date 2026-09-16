@@ -141,13 +141,56 @@ const sections = [
     id: "assurance",
     title: "Assurance responsabilité civile professionnelle",
     content: (
-      <p className="mt-6">
-        Conformément aux règles déontologiques de la profession d'avocat,
-        Maître Thomas Cohadon est titulaire d'une assurance de
-        responsabilité civile professionnelle. Le nom de l'assureur, le
-        numéro du contrat, l'adresse et le numéro de téléphone de
-        l'assurance seront indiqués ici dès qu'ils auront été communiqués.
-      </p>
+      <>
+        <p className="mt-6">
+          L'avocat justifie d'une assurance garantissant sa responsabilité
+          civile professionnelle. Tous les avocats inscrits au barreau de
+          Marseille sont automatiquement couverts par la police d'assurance
+          souscrite par l'Ordre.
+        </p>
+        <p>
+          La police d'assurance RCP est automatiquement souscrite par le
+          Barreau de Marseille auprès de la Compagnie MMA IARD Assurances
+          Mutuelle, société d'assurance mutuelle à cotisations fixes, RCS Le
+          Mans 775 652 126, et de la Compagnie MMA IARD, société anonyme au
+          capital de 537&nbsp;052&nbsp;368 euros entièrement versé, RCS Le
+          Mans 440 048 882. Sièges sociaux&nbsp;: 160 rue Henri Champion,
+          72030 Le Mans Cedex 9. Entreprises régies par le Code des
+          assurances.
+        </p>
+        <p>
+          Cette assurance couvre les fautes, omissions ou négligences
+          nécessairement involontaires commises dans le cadre de l'exercice
+          normal de la profession. L'exercice normal s'entend comme
+          l'ensemble des activités autorisées par le RIN, sauf le cas de la
+          fiducie ou de la représentation fiscale.
+        </p>
+        <p>
+          Plus précisément, le contrat a pour objet de garantir les
+          conséquences pécuniaires de la responsabilité civile encourue par
+          l'avocat à raison des dommages ou des préjudices causés à un
+          tiers, dans l'exercice de ses activités professionnelles, soit de
+          son fait personnel, soit du fait de ses auxiliaires,
+          collaborateurs et préposés occasionnels ou permanents, ou de
+          toutes personnes dont il est civilement responsable, résultant
+          notamment&nbsp;:
+        </p>
+        <ul className="mt-4 list-disc pl-6 space-y-3">
+          <li>
+            d'erreurs de fait ou de droit, omissions, oublis, retards,
+            fautes, inexactitudes, indiscrétions et, d'une manière
+            générale, de tous actes dommageables, notamment à la suite de
+            tous actes de postulation, d'assistance ou de conseil&nbsp;;
+          </li>
+          <li>
+            de vols, malversations, détournements, escroqueries ou abus de
+            confiance, commis au préjudice de la clientèle de l'avocat par
+            toute personne dont celui-ci serait reconnu responsable. Dans
+            ces cas, une plainte devra être déposée par l'avocat, soit
+            contre l'auteur du dommage, soit contre inconnu.
+          </li>
+        </ul>
+      </>
     ),
   },
   {

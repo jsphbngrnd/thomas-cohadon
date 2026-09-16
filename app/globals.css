@@ -134,6 +134,10 @@ p {
 .prose-editorial p:last-child {
   margin-bottom: 0;
 }
+.prose-editorial ul {
+  margin-bottom: 1.1em;
+  color: var(--ink-light);
+}
 
 /* ─────────── Layout ─────────── */
 .container-x {
