@@ -104,10 +104,16 @@ export default function ContactPage() {
 
           <aside className="col-span-12 lg:col-span-6 lg:col-start-7">
             <div className="t-eyebrow mb-10">— Le cabinet, à Marseille</div>
-            <div className="map-frame relative" style={{ aspectRatio: "4/3" }}>
-              <div className="map-pin" style={{ left: "48%", top: "54%" }} />
+            <div className="map-frame map-frame--embed relative" style={{ aspectRatio: "4/3" }}>
+              <iframe
+                title="Cabinet Thomas Cohadon — 35 rue Saint-Jacques, Marseille"
+                src="https://www.google.com/maps?q=35+rue+Saint-Jacques+Marseille&hl=fr&z=16&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
               <div
-                className="absolute top-6 left-6 p-5 max-w-xs"
+                className="absolute top-6 left-6 p-5 max-w-xs z-10"
                 style={{
                   background: "var(--background)",
                   border: "1px solid var(--rule)",
@@ -122,7 +128,7 @@ export default function ContactPage() {
                 </div>
                 <a
                   className="btn btn-link mt-4 text-xs"
-                  href="https://maps.google.com/?q=35+rue+Saint-Jacques+Marseille"
+                  href="https://www.google.com/maps?q=35+rue+Saint-Jacques+Marseille"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -130,7 +136,7 @@ export default function ContactPage() {
                 </a>
               </div>
               <div
-                className="absolute bottom-6 right-6 text-xs font-serif italic px-3 py-2"
+                className="absolute bottom-6 right-6 text-xs font-serif italic px-3 py-2 z-10"
                 style={{
                   background: "var(--background)",
                   border: "1px solid var(--rule)",

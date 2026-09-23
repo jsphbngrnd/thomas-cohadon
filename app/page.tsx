@@ -50,15 +50,15 @@ export default function HomePage() {
           </div>
 
           <div className="col-span-12 lg:col-span-5 lg:pl-10">
-            <div
-              className="img-frame placeholder aspect-[3/4] rise d-3"
-              data-placeholder="Marseille — photo à fournir"
-            />
-            <div
-              className="mt-4 text-xs"
-              style={{ color: "var(--muted-foreground)" }}
-            >
-              — Marseille
+            <div className="img-frame aspect-[3/4] rise d-3">
+              <Image
+                src="/images/hero-colonnes.webp"
+                alt="Colonnes de pierre d'un édifice néoclassique"
+                fill
+                className="object-cover object-[50%_20%]"
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -191,10 +191,15 @@ export default function HomePage() {
       <section className="container-x py-14 md:py-20 lg:py-32">
         <div className="grid grid-cols-12 gap-8 lg:gap-10 items-center">
           <div className="col-span-12 md:col-span-5">
-            <div
-              className="img-frame placeholder aspect-[4/5]"
-              data-placeholder="Marseille — photo à fournir"
-            />
+            <div className="img-frame aspect-[4/5]">
+              <Image
+                src="/images/approche-composition.webp"
+                alt="Composition graphique en noir, gris et blanc"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 40vw, 100vw"
+              />
+            </div>
           </div>
           <div className="col-span-12 md:col-span-6 md:col-start-7">
             <div className="t-eyebrow">— Approche</div>
