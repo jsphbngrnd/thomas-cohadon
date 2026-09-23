@@ -69,16 +69,16 @@ export default function CabinetPage() {
       <section className="container-x py-10 md:py-14 lg:py-16">
         <div className="grid grid-cols-12 gap-8 lg:gap-10">
           <div className="col-span-12 md:col-span-5">
-            <div
-              className="img-frame placeholder aspect-[4/5]"
-              data-placeholder="Portrait — photo à fournir"
-            />
-            <div
-              className="mt-3 text-xs flex justify-between"
-              style={{ color: "var(--muted-foreground)" }}
-            >
-              <span>Portrait — cabinet de Marseille</span>
-              <span className="font-serif-italic">↳ Photo à remplacer</span>
+            <div className="img-frame aspect-[4/5]">
+              <Image
+                src="/images/cabinet-hero.webp"
+                alt="Rayonnages de livres juridiques, vus en flou à travers une vitre"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 40vw, 100vw"
+                priority
+                unoptimized
+              />
             </div>
           </div>
           <div className="col-span-12 md:col-span-6 md:col-start-7">
@@ -154,6 +154,7 @@ export default function CabinetPage() {
             fill
             className="object-cover object-[50%_40%]"
             sizes="100vw"
+            unoptimized
           />
         </div>
         <div className="grid grid-cols-12 gap-6 lg:gap-10 mt-10 md:mt-14 lg:mt-16">
