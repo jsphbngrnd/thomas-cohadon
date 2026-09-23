@@ -147,16 +147,6 @@ export default function CabinetPage() {
         <h2 className="font-serif t-h1 mt-6 max-w-3xl">
           Cinq engagements concrets qui structurent chaque collaboration.
         </h2>
-        <div className="img-frame aspect-[2/1] mt-10 md:mt-12">
-          <Image
-            src="/images/cabinet-vieux-port.webp"
-            alt="Port de plaisance de Marseille et basilique Notre-Dame de la Garde"
-            fill
-            className="object-cover object-[50%_40%]"
-            sizes="100vw"
-            unoptimized
-          />
-        </div>
         <div className="grid grid-cols-12 gap-6 lg:gap-10 mt-10 md:mt-14 lg:mt-16">
           {engagements.map((v) => (
             <article key={v.n} className="col-span-12 md:col-span-4 card-quiet">
