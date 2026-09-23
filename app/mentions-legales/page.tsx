@@ -156,14 +156,35 @@ const sections = [
           capital de 537&nbsp;052&nbsp;368 euros entièrement versé, RCS Le
           Mans 440 048 882. Sièges sociaux&nbsp;: 160 rue Henri Champion,
           72030 Le Mans Cedex 9. Entreprises régies par le Code des
-          assurances.
+          assurances. Contrat MMA n°&nbsp;118 263 720.
         </p>
         <p>
           Cette assurance couvre les fautes, omissions ou négligences
-          nécessairement involontaires commises dans le cadre de l'exercice
-          normal de la profession. L'exercice normal s'entend comme
-          l'ensemble des activités autorisées par le RIN, sauf le cas de la
-          fiducie ou de la représentation fiscale.
+          involontaires de l'avocat. Elle est gérée par l'intermédiaire de
+          la Société de Courtage des Barreaux&nbsp;:
+        </p>
+        <p>
+          Société de Courtage des Barreaux
+          <br />
+          Pôle d'Activités
+          <br />
+          400, chemin des Jallassières
+          <br />
+          CS 30002
+          <br />
+          13510 Éguilles
+          <br />
+          Tél.&nbsp;:{" "}
+          <a href="tel:+33413416000" className="underline">
+            04 13 41 60 00
+          </a>
+          {" — "}
+          Fax&nbsp;: 04 13 41 61 00
+        </p>
+        <p>
+          L'exercice normal de la profession s'entend comme l'ensemble des
+          activités autorisées par le RIN, sauf le cas de la fiducie ou de
+          la représentation fiscale.
         </p>
         <p>
           Plus précisément, le contrat a pour objet de garantir les
