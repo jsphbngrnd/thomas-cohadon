@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { parcours } from "@/content/parcours"
 
@@ -146,6 +147,15 @@ export default function CabinetPage() {
         <h2 className="font-serif t-h1 mt-6 max-w-3xl">
           Cinq engagements concrets qui structurent chaque collaboration.
         </h2>
+        <div className="img-frame aspect-[2/1] mt-10 md:mt-12">
+          <Image
+            src="/images/cabinet-marseille.webp"
+            alt="Toits de Marseille et basilique Notre-Dame de la Garde"
+            fill
+            className="object-cover object-[50%_35%]"
+            sizes="100vw"
+          />
+        </div>
         <div className="grid grid-cols-12 gap-6 lg:gap-10 mt-10 md:mt-14 lg:mt-16">
           {engagements.map((v) => (
             <article key={v.n} className="col-span-12 md:col-span-4 card-quiet">
@@ -159,14 +169,6 @@ export default function CabinetPage() {
             </article>
           ))}
         </div>
-      </section>
-
-      {/* IMAGE BREAK */}
-      <section className="container-x py-8 md:py-10 lg:py-12">
-        <div
-          className="img-frame placeholder aspect-[21/8]"
-          data-placeholder="Marseille — photo à fournir"
-        />
       </section>
 
       {/* PARCOURS */}
