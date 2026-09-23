@@ -149,10 +149,10 @@ export default function CabinetPage() {
         </h2>
         <div className="img-frame aspect-[2/1] mt-10 md:mt-12">
           <Image
-            src="/images/cabinet-marseille.webp"
-            alt="Toits de Marseille et basilique Notre-Dame de la Garde"
+            src="/images/cabinet-vieux-port.webp"
+            alt="Port de plaisance de Marseille et basilique Notre-Dame de la Garde"
             fill
-            className="object-cover object-[50%_35%]"
+            className="object-cover object-[50%_40%]"
             sizes="100vw"
           />
         </div>
